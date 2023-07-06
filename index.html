@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Ripplesで波紋エフェクトを付ける</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .hamon {
+        width: 100%;
+        height: 100vh;
+        background: #f4f4ff;
+        /* background: url("./183.jpg") center center/cover no-repeat; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hamon"></div>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.ripples-min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hamon").ripples();
+      });
+    </script>
+  </body>
+</html>
